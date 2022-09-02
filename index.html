@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sorting Visualiser</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="./index.js" defer> </script>
+   <script src="./bubbleSort.js" defer> </script>
+</head>
+
+<body>
+   <header>Sorting Algorithms Visualiser</header>
+   <nav class="navbar">
+      <div class="navbar__left">
+         <input type="button" value="New Array" class="btn" id="newArray">
+      </div>
+      <div class="navbar__middle">
+         <span>Array size: </span><input type="range" class="control" min="5" max="70" step="5" id="size">
+         <br><br>
+         <span>Sorting speed: </span><input type="range" class="control" min="1" max="20" step="1" id="speed">
+      </div>
+      <div class="navbar__right">
+         <input type="button" value="Bubble Sort" class="btn" id="bubble">
+         <input type="button" value="Insertion Sort" class="btn" id="insertion">
+         <input type="button" value="Selection Sort" class="btn" id="selection">
+         <input type="button" value="Quick Sort" class="btn" id="quick">
+         <input type="button" value="Merge Sort" class="btn" id="merge">
+      </div>
+   </nav>
+   <div class="bars-container">
+
+   </div>
+</body>
+
+</html>
