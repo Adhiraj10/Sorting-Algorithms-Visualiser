@@ -1,7 +1,21 @@
 const arrayBtn = document.querySelector('#newArray');
 const arraySize = document.querySelector('#size');
-const simulationSpeed = document.querySelector('#speed');
+const animationSpeed = document.querySelector('#speed');
 const barsContainer = document.querySelector('.bars-container');
+
+const swap = (bar1, bar2) => {
+   let temp = bar1.style.height;
+   bar1.style.height = bar2.style.height;
+   bar2.style.height = temp;
+}
+
+const animater = (delay) => {
+   return new Promise((resolve) => {
+      setTimeout(() => {
+         resolve(null);
+      }, delay);
+   })
+}
 
 arrayBtn.addEventListener('click', () => {
    barsContainer.innerHTML = null;
@@ -14,10 +28,3 @@ arrayBtn.addEventListener('click', () => {
       barsContainer.appendChild(newDiv);
    }
 })
-
-const swap = (bar1, bar2) => {
-   let temp = bar1.style.height;
-   bar1.style.height = bar2.style.height;
-   bar2.style.height = temp;
-
-}
