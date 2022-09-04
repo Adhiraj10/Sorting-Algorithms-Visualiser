@@ -1,7 +1,7 @@
 const bubbleBtn = document.querySelector('#bubble');
 
 bubbleBtn.addEventListener('click', async () => {
-   let bars = document.querySelectorAll('.bars');
+   const bars = document.querySelectorAll('.bars');
    console.log(bars)
    for (let i = 0; i < bars.length - 1; i++) {
       for (let j = 0; j < bars.length - i - 1; j++) {
@@ -16,8 +16,5 @@ bubbleBtn.addEventListener('click', async () => {
       }
       bars[(bars.length - 1) - i].style.backgroundColor = '#ff0000';
    }
-   for (let i = 0; i < bars.length; i++) {
-      await animater(10);
-      bars[i].style.backgroundColor = '#006400';
-   }
+   recolor();
 })

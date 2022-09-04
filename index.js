@@ -17,6 +17,14 @@ const animater = (delay) => {
    })
 }
 
+const recolor = async () => {
+   const bars = document.querySelectorAll('.bars');
+   for (let i = 0; i < bars.length; i++) {
+      await animater(10);
+      bars[i].style.backgroundColor = '#006400';
+   }
+}
+
 arrayBtn.addEventListener('click', () => {
    barsContainer.innerHTML = null;
    let size = parseInt(arraySize.value);
