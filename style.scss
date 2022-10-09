@@ -22,18 +22,17 @@ span {
 }
 
 .navbar {
-   padding: 5px;
-   margin-top: 28px;
-   border: 2px solid red;
+   padding: 60px 5px 20px 5px;
+   border-bottom: 2px solid #ff0000;
    display: flex;
    justify-content: space-between;
 
    &__left {
-      margin-left: 3px;
+      margin-left: 10px;
    }
 
    &__right {
-      margin-right: 3px;
+      margin-right: 10px;
    }
 }
 
@@ -60,7 +59,6 @@ span {
 
 
 .bars-container {
-   border: 2px solid white;
    width: fit-content;
    height: fit-content;
    margin-left: auto;

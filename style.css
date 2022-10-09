@@ -23,9 +23,8 @@ span {
 }
 
 .navbar {
-  padding: 5px;
-  margin-top: 28px;
-  border: 2px solid red;
+  padding: 60px 5px 20px 5px;
+  border-bottom: 2px solid #ff0000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,11 +34,11 @@ span {
 }
 
 .navbar__left {
-  margin-left: 3px;
+  margin-left: 10px;
 }
 
 .navbar__right {
-  margin-right: 3px;
+  margin-right: 10px;
 }
 
 .btn {
@@ -63,7 +62,6 @@ span {
 }
 
 .bars-container {
-  border: 2px solid white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
