@@ -20,5 +20,5 @@ insertionBtn.addEventListener('click', async () => {
       }
       bars[j + 1].style.height = temp;
    }
-   recolor();
+   await recolor();
 })

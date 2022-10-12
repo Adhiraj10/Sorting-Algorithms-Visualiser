@@ -18,7 +18,7 @@ const selectionSort = async (bars, len) => {
       bars[i].style.backgroundColor = "cyan";
       await animater(800);
       swap(bars[min_idx], bars[i]);
-      recolor();
+      await recolor();
    }
 }
 

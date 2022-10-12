@@ -16,5 +16,5 @@ bubbleBtn.addEventListener('click', async () => {
       }
       bars[(bars.length - 1) - i].style.backgroundColor = '#ff0000';
    }
-   recolor();
+   await recolor();
 })

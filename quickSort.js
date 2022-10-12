@@ -37,7 +37,7 @@ const partition = async (bars, l, r) => {
    }
    animater((1110 - parseInt(animationSpeed.value)));
    swap(bars[l], bars[j]);
-   recolor();
+   await recolor();
    return j;
 }
 
