@@ -51,5 +51,7 @@ const quickSort = async (bars, l, r) => {
 
 quickBtn.addEventListener('click', async () => {
    const bars = document.querySelectorAll('.bars');
+   disableBtns();
    await quickSort(bars, 0, bars.length - 1);
+   enableBtns();
 })

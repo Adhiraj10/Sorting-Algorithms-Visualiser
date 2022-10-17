@@ -1,6 +1,6 @@
 const insertionBtn = document.querySelector('#insertion');
 
-insertionBtn.addEventListener('click', async () => {
+const insertionSort = async () => {
    const bars = document.querySelectorAll('.bars');
    bars[0].style.backgroundColor = 'yellow';
    for (let i = 1; i < bars.length; i++) {
@@ -21,4 +21,10 @@ insertionBtn.addEventListener('click', async () => {
       bars[j + 1].style.height = temp;
    }
    await recolor();
+}
+
+insertionBtn.addEventListener('click', async () => {
+   disableBtns();
+   await insertionSort();
+   enableBtns();
 })

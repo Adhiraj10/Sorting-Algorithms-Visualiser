@@ -1,6 +1,6 @@
 const bubbleBtn = document.querySelector('#bubble');
 
-bubbleBtn.addEventListener('click', async () => {
+const bubbleSort = async () => {
    const bars = document.querySelectorAll('.bars');
    // console.log(bars)
    for (let i = 0; i < bars.length - 1; i++) {
@@ -17,4 +17,10 @@ bubbleBtn.addEventListener('click', async () => {
       bars[(bars.length - 1) - i].style.backgroundColor = '#ff0000';
    }
    await recolor();
-})
+}
+
+bubbleBtn.addEventListener('click', async () => {
+   disableBtns();
+   await bubbleSort();
+   enableBtns();
+});

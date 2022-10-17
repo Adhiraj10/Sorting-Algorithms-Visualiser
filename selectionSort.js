@@ -16,7 +16,7 @@ const selectionSort = async (bars, len) => {
          }
       }
       bars[i].style.backgroundColor = "cyan";
-      await animater(800);
+      await animater(600);
       swap(bars[min_idx], bars[i]);
       await recolor();
    }
@@ -24,5 +24,7 @@ const selectionSort = async (bars, len) => {
 
 selectionBtn.addEventListener('click', async () => {
    const bars = document.getElementsByClassName('bars');
+   disableBtns();
    selectionSort(bars, bars.length);
+   enableBtns();
 })

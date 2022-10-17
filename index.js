@@ -3,6 +3,17 @@ const arraySize = document.querySelector('#size');
 const animationSpeed = document.querySelector('#speed');
 const barsContainer = document.querySelector('.bars-container');
 
+const disableBtns = () => {
+   let btns = document.getElementsByClassName('btn');
+   for (let i = 0; i < btns.length; i++)
+      btns[i].disabled = true;
+}
+const enableBtns = () => {
+   let btns = document.getElementsByClassName('btn');
+   for (let i = 0; i < btns.length; i++)
+      btns[i].disabled = false;
+}
+
 const swap = (bar1, bar2) => {
    let temp = bar1.style.height;
    bar1.style.height = bar2.style.height;
