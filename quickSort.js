@@ -1,3 +1,4 @@
+// Needs fixing
 const quickBtn = document.getElementById('quick');
 
 const partition = async (bars, l, r) => {

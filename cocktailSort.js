@@ -1,6 +1,7 @@
 const cocktailBtn = document.getElementById('cocktail');
 
-const cocktailSort = async (bars) => {
+const cocktailSort = async () => {
+   const bars = document.getElementsByClassName('bars');
    let swapped = true;
    let start = 0;
    let end = bars.length;
@@ -45,8 +46,7 @@ const cocktailSort = async (bars) => {
 }
 
 cocktailBtn.addEventListener('click', async () => {
-   const bars = document.getElementsByClassName('bars');
    disableBtns();
-   await cocktailSort(bars);
+   await cocktailSort();
    enableBtns();
 })

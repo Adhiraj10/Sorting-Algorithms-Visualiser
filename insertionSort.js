@@ -2,6 +2,7 @@ const insertionBtn = document.querySelector('#insertion');
 
 const insertionSort = async () => {
    const bars = document.querySelectorAll('.bars');
+   if (bars.length == 0) return;
    bars[0].style.backgroundColor = 'yellow';
    for (let i = 1; i < bars.length; i++) {
       let temp = bars[i].style.height;
